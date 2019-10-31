@@ -1,0 +1,36 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+        <div class="card card-body">
+            <h1 class="text-center mb-3">
+                <i class="fas fa-fish"></i> All Tunas
+            </h1>
+
+            <form action="/tuna/resultsall" method="POST">
+                <table class="table table-striped">
+
+                    <tr>
+                        <th>TunaId</th>
+                        <th>Holder</th>
+                        <th>Vessel</th>
+                        <th>Catch Location <br>(Longitude, Latitude)</th>
+                        <th>Timestamp</th>
+                    </tr>
+                    <% for(var i=0; i < Records.length; i++) { %>
+                    <tr>
+                        <td><%= Records[i].Key %></td>
+                        <td><%= Records[i].holder %></td>
+                        <td><%= Records[i].vessel %></td>
+                        <td><%= Records[i].location %></td>
+                        <td><%= Records[i].timestamp %></td>
+                    </tr>
+                    <% } %>
+                </table>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    DashBoard
+                </button>
+            </form>
+
+        </div>
+    </div>
+</div>

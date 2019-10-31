@@ -1,0 +1,23 @@
+<h1 class="mt-4">Dashboard</h1>
+<p class="lead mb-3">Welcome <%= name %></p>
+<a href="/users/logout" class="btn btn-secondary">Logout</a>
+<!--a href="/tuna/index" class="btn btn-secondary">Tuna</a-->
+
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body text-center">
+      <h1><i class="fas fa-fish fa-3x"></i></h1>
+      <% include ./partials/messages %>
+      <p>Menu</p>
+      <a href="/tuna/addtuna" class="btn btn-primary btn-block mb-2">AddTuna</a>
+      <a href="/tuna/querytuna" class="btn btn-secondary btn-block">QueryTuna</a>
+      <a href="/tuna/queryalltuna" class="btn btn-primary btn-block">QueryAllTuna</a>
+      <a href="/tuna/changeowner" class="btn btn-secondary btn-block">ChangeOwner</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+ 

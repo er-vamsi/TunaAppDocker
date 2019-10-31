@@ -1,0 +1,32 @@
+<div class="row mt-5">
+    <div class="col-md-6 m-auto">
+      <div class="card card-body">
+        <h1 class="text-center mb-3">
+            <i class="fas fa-fish"></i> Tuna Record
+        </h1>
+       
+        <form action="/tuna/results" method="POST">
+            
+          <table class="table table-striped">
+                <tr>
+                  <th>Holder</th>
+                  <th>Vessel</th>
+                  <th>Catch Location <br>(Longitude, Latitude)</th>
+                  <th>Timestamp</th>
+                </tr>
+        
+                <tr>
+                    <td><%= holder %></td>
+                    <td><%= vessel %></td>
+                    <td><%= location %></td>
+                    <td><%= timestamp %></td>
+                </tr>
+              </table>       
+          <button type="submit" class="btn btn-primary btn-block">
+            DashBoard
+          </button>
+        </form>
+      
+      </div>
+    </div>
+  </div>
